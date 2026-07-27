@@ -7,13 +7,19 @@ const empty: null = null;
 const notInitialize: undefined = undefined;
 const callback = (a: number): number => { return 100 + a };
 
-// 2 SECOND
+console.log(age, name, toggle, empty, notInitialize, callback(10));
+
+
+// SECOND
 
 let anything: any = -20;
 anything = 'Text';
 anything = {};
 
-// 3 THIRD
+console.log(anything);
+
+
+// THIRD
 
 let some: unknown;
 some = 'Text';
@@ -23,13 +29,19 @@ if (typeof some === 'string') {
     str = some;
 }
 
-// CHOTYRY 4
+console.log(some, str);
+
+
+// FOURTH
 
 type PersonalData = [string, number];
 
 const person: PersonalData = ['Max', 21];
 
-// FIFTH 5
+console.log(person);
+
+
+// FIFTH
 
 enum LoadingStatus {
   LOADING = 'LOADING',
@@ -38,19 +50,28 @@ enum LoadingStatus {
 
 const currentStatus: LoadingStatus = LoadingStatus.LOADING;
 
-// SIXTH 6
+console.log(currentStatus);
+
+
+// SIXTH
 
 type availableType = string | number;
 
-const data: availableType = 500
+const data: availableType = 500;
 
-// SEVENTH 7
+console.log(data);
+
+
+// SEVENTH
 
 type availableString = 'enable' | 'disable';
 
-const string: availableString = "disable"
+const string: availableString = "disable";
 
-// EIGHTH 8
+console.log(string);
+
+
+// EIGHTH
 
 function showMessage(message: string) {
  console.log(message);
@@ -64,7 +85,17 @@ function customError() {
  throw new Error('Error');
 }
 
-// NINTH 9
+showMessage('Hello');
+console.log(calc(5, 10));
+
+try {
+  customError();
+} catch (error) {
+  console.log(error);
+}
+
+
+// NINTH
 
 type Post = {
     title: string,
@@ -94,3 +125,5 @@ const page2: Post = {
  accounts: ['Alex'],
  status: 'close',
 }
+
+console.log(page1, page2);
