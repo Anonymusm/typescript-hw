@@ -23,7 +23,7 @@ console.log(anything);
 
 let some: unknown;
 some = 'Text';
-let str: string;
+let str: string | undefined;
 
 if (typeof some === 'string') {
     str = some;
